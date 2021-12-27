@@ -54,6 +54,19 @@ public class 背包问题_1 {
 
     }
 
+    //这个讲空间压缩到一维度
+    public int maxValue3(int N,int C,int[] v, int[] w){
+        int[] dp = new int[C+1];
+        for (int i = 0; i < N; i++) {
+            for (int j = C; j >=v[i] ; j++) {
+                int x = dp[j];
+                int y = dp[j-v[i]] + w[i];
 
+                dp[j] = Math.max(x,y);
+            }
+        }
+
+        return dp[C];
+    }
 
 }
