@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class 剑指OfferII_1 {
@@ -31,23 +33,8 @@ public class 剑指OfferII_1 {
 
     public static void main(String[] args) {
         System.out.println(isPalindrome( "A man, a plan, a canal: Panama"));
-
-        System.out.println((Integer.toBinaryString(Integer.MIN_VALUE >> 1 )));
-
-        System.out.println((Integer.toBinaryString(Integer.MIN_VALUE  )));
-
-        System.out.println(Integer.toBinaryString(-10));
-        System.out.println(Integer.toBinaryString(-10 >>>10));
-
-
-        System.out.println(-10>>>2);
-//        System.out.println((-1<<31));
-//        System.out.println(Integer.toBinaryString(-2147483648));
-
-        System.out.println(1>Integer.MIN_VALUE);
-        System.out.println(1-Integer.MIN_VALUE>=0);
-        System.out.println(Math.abs(Integer.MIN_VALUE));
-
+        List<Integer> res = new ArrayList<>();
+        res.size();
 
     }
 }
